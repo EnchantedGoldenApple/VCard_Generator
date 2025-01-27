@@ -15,7 +15,7 @@ function generateVCardV4() {
     ];
 
     if(mobile) vcard.push(`TEL;TYPE=cell:${mobile}`);
-    if(work) vcard.push(`TEL;TYPE=cell:${work}`);
+    if(work) vcard.push(`TEL;TYPE=work:${work}`);
     if(email) vcard.push(`EMAIL:${email}`);
     if(address) vcard.push(`ADR:${address}`);
     if(organisation) vcard.push(`ORG:${organisation}`);
