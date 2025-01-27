@@ -14,7 +14,7 @@ function generateVCardV4() {
       `FN:${name}`
     ];
 
-    if(mobile) vcard.push(`TEL;TYPE=cell:${phone}`);
+    if(mobile) vcard.push(`TEL;TYPE=cell:${mobile}`);
     if(work) vcard.push(`TEL;TYPE=cell:${work}`);
     if(email) vcard.push(`EMAIL:${email}`);
     if(address) vcard.push(`ADR:${address}`);
