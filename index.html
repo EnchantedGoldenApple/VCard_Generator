@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCard Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>vCard Generator</h1>
+    <form id="vcardForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="organisation">Organisation:</label>
+        <input type="text" id="organisation" name="organisation"><br><br>
+
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role"><br><br>
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url"><br><br>
+
+        <button type="button" onclick="downloadAsPNG()">Download as PNG</button>
+        <button type="button" onclick="downloadAsSVG()">Download as SVG</button>
+        <div id="qrcode"></div>
+    </form>
+
+    <script>
+    </script>
+    <script src="qrcode.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
