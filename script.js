@@ -1,6 +1,7 @@
 function generateVCardV4() {
     const name = document.getElementById("name").value.trim();
-    const phone = document.getElementById("phone").value.trim();
+    const mobile = document.getElementById("mobile").value.trim();
+    const work = document.getElementById("work").value.trim();
     const email = document.getElementById("email").value.trim();
     const address = document.getElementById("address").value.trim();
     const organisation = document.getElementById("organisation").value.trim();
@@ -13,7 +14,8 @@ function generateVCardV4() {
       `FN:${name}`
     ];
 
-    if(phone) vcard.push(`TEL:${phone}`);
+    if(mobile) vcard.push(`TEL;TYPE=cell:${phone}`);
+    if(work) vcard.push(`TEL;TYPE=cell:${work}`);
     if(email) vcard.push(`EMAIL:${email}`);
     if(address) vcard.push(`ADR:${address}`);
     if(organisation) vcard.push(`ORG:${organisation}`);
